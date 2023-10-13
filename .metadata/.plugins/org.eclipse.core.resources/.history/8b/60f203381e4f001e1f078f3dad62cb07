@@ -1,0 +1,8 @@
+package com.user.service.services;
+
+public interface UserService {
+	
+	User saveUser(User user);
+	List<User>
+
+}

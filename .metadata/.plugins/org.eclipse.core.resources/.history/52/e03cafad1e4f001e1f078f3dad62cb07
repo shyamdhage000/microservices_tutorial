@@ -1,0 +1,6 @@
+package com.user.service.services.impl;
+
+public class UserServiceImpl
+{
+	
+}

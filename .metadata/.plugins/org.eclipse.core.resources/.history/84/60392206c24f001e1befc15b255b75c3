@@ -1,0 +1,5 @@
+package com.rating.service.eitity;
+
+public class Rating {
+
+}

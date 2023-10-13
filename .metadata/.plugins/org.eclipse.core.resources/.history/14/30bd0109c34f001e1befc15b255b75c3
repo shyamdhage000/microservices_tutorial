@@ -1,0 +1,8 @@
+package com.rating.service.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.rating.service.eitity.Rating;
+
+public interface RatingRepository extends JpaRepository<Rating, String>{
+}

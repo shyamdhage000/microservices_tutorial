@@ -1,0 +1,15 @@
+package com.rating.service.services;
+
+import com.rating.service.eitity.Rating;
+
+public interface RatingService {
+	
+	Rating createRating();
+	
+	Rating getAllRating();
+	
+	Rating getByUserID();
+	
+	Rating getAllByHotelId();
+
+}

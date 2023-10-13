@@ -1,0 +1,10 @@
+package com.hotel.service.services.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.hotel.service.services.HotelService;
+
+@Service
+public class HotelServiceImpl implements HotelService {
+
+}
