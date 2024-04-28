@@ -1,0 +1,78 @@
+Monothilics Architecture: 
+Multiple components are combined in a single large app.
+Single code base
+Deployed in single bundle
+change in one service then whole app is redeployed
+one service down whole project down
+problem in scaling
+
+Microservice:
+Devide slarge projects into smaller projects
+we buid each service seperately and these services communicates with each other with the help of Rest APIS
+Different codebase- we can code each service i different langiage like java,python,node js
+each module is managed independently->product,user,order,payment
+diffrent tech stack
+Handling microservices is complex
+can  be suggested for large projects not for smaller
+
+
+we can use the microservice name instead of localhost:8080 to call the service directly.
+http://RATING-SERVICE/ratings/users/"+user.getUserId()
+
+Feign Client:
+it is  a declarative HTTP web client developed by netflix.
+
+
+
+
+API Gateway: It  is a middleware ware who decided which service to call based on the request. It is nothing but one microservice
+			It acts as a gate keeper to send requests to different services
+
+Resilience4j-circuitbrear- This  library is used in microservice to solve a circut breaker issue.
+
+Circuit breaker: The Circuit Breaker pattern is a design pattern used in software engineering to handle failures in distributed systems. 
+				 It is used to detect and handle faults in communication between services, preventing them from cascading and causing further damage.
+
+Circuit Breaker States:
+Closed:
+	closed state, the circuit breaker allows requests to flow through and execute the operation as normal.
+
+Open:
+	In the open state, the circuit breaker returns a pre-configured fallback value instead of executing the operation.
+
+Half-Open:
+	In the half-open state, the circuit breaker allows a limited number of requests to pass through to test if the operation is functioning correctly. If these requests succeed, the circuit breaker returns to the closed state. If they fail, the circuit breaker returns to the open state.
+	
+
+
+
+Spring Cloud: it is like spring, sping boot, used to develope microservices
+
+
+
+
+
+
+
+Services going to build:
+Product sErvice: Create and view Products, acts as product catalog.
+order service- can order product
+Inventory service- can check if product is in stock or not
+Notification serfvice- can send notifications after order is placed
+
+
+Oder,Inventory adn Notificqtion are goint to interact with each other
+
+Synchronus and asynchronous communication.
+
+
+Test Container: IT is a java library that supports JUnit tests,providing lightweight throwaway instance of common database, selenium web driver
+
+
+
+Communication types?
+what is fault tollerance?
+Different between monolithic and microservices?
+Service discovery
+load balancing
+API gateway
